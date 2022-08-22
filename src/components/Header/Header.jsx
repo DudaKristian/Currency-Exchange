@@ -12,7 +12,7 @@ export const Header = ({ currencies }) => {
                     <span>{usdValue}UAH</span>
             </li>
             <li>
-                <img src="#" alt="USA flag" />
+                <img src="#" alt="EU flag" />
                     <span>{euroValue}UAH</span>
             </li>
         </ul>
