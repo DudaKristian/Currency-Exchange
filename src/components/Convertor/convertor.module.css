@@ -1,0 +1,17 @@
+.form{
+    margin-top: 25px;
+    display: block;
+    margin: 0 auto;
+}
+
+.input{
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+
+.form__label {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 15px;
+}

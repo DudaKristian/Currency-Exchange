@@ -1,0 +1,25 @@
+
+.header__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__list{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    
+    list-style: none;
+}
+
+.header__item{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.header__item__value{
+    margin-left: 10px;
+}

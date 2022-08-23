@@ -1,20 +1,20 @@
-import { Header } from "components/Header/Header";
-import { fetchCurrencies } from "../../API/fetchCurrencies"
 import { useState, useEffect } from "react";
+import { Header } from "components/Header/Header";
 import { Covertor } from "components/Convertor/Convertor";
+import { fetchCurrencies } from "../../API/fetchCurrencies"
+import styles from "./app.module.css"
+
 
 export const App = () => {
 
 const [currencies, setCurrencies] = useState("")
-    
-  console.log(Object.keys(currencies))
-  
+      
   useEffect(() => {
     fetchCurrencies(setCurrencies);
   }, [])
   
   return (
-    <div>
+    <div className={styles.app}>
       <Header currencies={currencies} />
       <Covertor currencies={currencies}/>
     </div>

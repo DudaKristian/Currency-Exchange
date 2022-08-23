@@ -1,3 +1,6 @@
+import usa from "../../images/united-states.png"
+import eu from "../../images/european-union.png"
+import styles from "./header.module.css"
 
 export const Header = ({ currencies }) => {
 
@@ -6,15 +9,21 @@ export const Header = ({ currencies }) => {
 
     return (
         <header>
-        <ul>
-            <li>
-                <img src="#" alt="USA flag" />
-                    <span>{usdValue}UAH</span>
-            </li>
-            <li>
-                <img src="#" alt="EU flag" />
-                    <span>{euroValue}UAH</span>
-            </li>
-        </ul>
+            <h1 className={styles.header__title}>CURRENCY CONVERTER</h1>
+            <ul className={styles.header__list}>
+                <li className={styles.header__item}>
+                    <img src={usa} alt="USA flag" width="20"/>
+                    <span className={styles.header__item__value}>
+                        {usdValue}UAH
+                    </span>
+                </li>
+                <li className={styles.header__item}>
+                    <img src={eu} alt="EU flag" width="20"/>
+                    <span className={styles.header__item__value}>
+                        {euroValue}UAH
+                    </span>
+                </li>
+            </ul>
     </header>)
 }
+
