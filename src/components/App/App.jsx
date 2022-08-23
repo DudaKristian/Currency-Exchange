@@ -6,6 +6,8 @@ import { Covertor } from "components/Convertor/Convertor";
 export const App = () => {
 
 const [currencies, setCurrencies] = useState("")
+    
+  console.log(Object.keys(currencies))
   
   useEffect(() => {
     fetchCurrencies(setCurrencies);

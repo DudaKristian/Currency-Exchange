@@ -8,7 +8,7 @@ export const fetchCurrencies = async (hook) => {
     try {
         await fetch(`https://api.fastforex.io/fetch-all?api_key=${KEY}`, options)
         .then(response => response.json())
-        .then(response => hook([...response.results]))
+        .then(response => hook(response.results))
     } catch (err) {
         console.error(err)
     }

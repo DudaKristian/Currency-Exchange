@@ -1,31 +1,24 @@
 
 export const Covertor = ({ currencies }) => {
 
-    const onInputChange = () => {
-        currencies.includes("USD") => {
-            console.log(currencies)
-        }
-    }
-
+    const currenciesArr = Object.entries(currencies);
 
     return (
         <form>
             <label htmlFor="curr1">
-                <input type="number" min="0" onChange={onInputChange}/>
+                <input type="number" min="0" />
                 <select name="curr1" id="curr1">
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="UAH">UAH</option>
-                    <option value="GBR">GBR</option>
+                    {currenciesArr.map((index) => {
+                        return <option value={index[1]} > {index[0]} </option >
+                    })}
                 </select>
             </label>
             <label htmlFor="curr2">
                 <input type="number" min="0"/>
                 <select name="curr2" id="curr2">
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="UAH">UAH</option>
-                    <option value="GBR">GBR</option>
+                    {currenciesArr.map((index) => {
+                        return <option value={index[1]} > {index[0]} </option >
+                    })}
                 </select>
             </label>
         </form>
