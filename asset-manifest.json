@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/currency-exchange/static/css/main.9b5270d4.css",
-    "main.js": "/currency-exchange/static/js/main.f4fd194b.js",
-    "static/media/european-union.png": "/currency-exchange/static/media/european-union.db8e17f973e00c8a5496.png",
-    "static/media/united-states.png": "/currency-exchange/static/media/united-states.4d9d990626a3df96a265.png",
-    "index.html": "/currency-exchange/index.html",
-    "main.9b5270d4.css.map": "/currency-exchange/static/css/main.9b5270d4.css.map",
-    "main.f4fd194b.js.map": "/currency-exchange/static/js/main.f4fd194b.js.map"
+    "main.css": "/Currency-Exchange/static/css/main.9b5270d4.css",
+    "main.js": "/Currency-Exchange/static/js/main.d80dcac0.js",
+    "static/media/european-union.png": "/Currency-Exchange/static/media/european-union.db8e17f973e00c8a5496.png",
+    "static/media/united-states.png": "/Currency-Exchange/static/media/united-states.4d9d990626a3df96a265.png",
+    "index.html": "/Currency-Exchange/index.html",
+    "main.9b5270d4.css.map": "/Currency-Exchange/static/css/main.9b5270d4.css.map",
+    "main.d80dcac0.js.map": "/Currency-Exchange/static/js/main.d80dcac0.js.map"
   },
   "entrypoints": [
     "static/css/main.9b5270d4.css",
-    "static/js/main.f4fd194b.js"
+    "static/js/main.d80dcac0.js"
   ]
 }
